@@ -1,0 +1,95 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Spicy Basil Chicken Stir-Fry",
+    "description": "A quick and flavorful stir-fry with tender chicken, basil, and mushrooms.",
+    "ingredients": [
+      "550 g chicken breast, sliced",
+      "120 ml soy sauce",
+      "200 g basil leaves",
+      "400 g mushrooms, sliced"
+    ],
+    "preparing_time": 30,
+    "calories": 320,
+    "recipe_image": "https://ibb.co/pKMFMRv"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Vegetarian Pad Thai",
+    "description": "A classic Thai dish with rice noodles, tofu, and crunchy vegetables.",
+    "ingredients": [
+      "300 g rice noodles",
+      "200 g firm tofu, diced",
+      "150 g bean sprouts",
+      "100 g carrots, julienned",
+      "100 g bell peppers, sliced"
+    ],
+    "preparing_time": 25,
+    "calories": 280,
+    "recipe_image": "https://ibb.co/wBYkr5w"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Mushroom Risotto",
+    "description": "Creamy risotto cooked with savory mushrooms and Parmesan cheese.",
+    "ingredients": [
+      "300 g Arborio rice",
+      "500 g mixed mushrooms (such as cremini, shiitake, and oyster)",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 liter vegetable broth",
+      "100 g Parmesan cheese, grated"
+    ],
+    "preparing_time": 40,
+    "calories": 380,
+    "recipe_image": "https://ibb.co/Bj55Jq2"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Caprese Salad",
+    "description": "A refreshing salad featuring ripe tomatoes, fresh mozzarella, and basil leaves.",
+    "ingredients": [
+      "500 g ripe tomatoes, sliced",
+      "250 g fresh mozzarella cheese, sliced",
+      "100 g fresh basil leaves",
+      "2 tbsp balsamic vinegar",
+      "2 tbsp extra virgin olive oil"
+    ],
+    "preparing_time": 15,
+    "calories": 250,
+    "recipe_image": "https://ibb.co/qgJ6Q1w"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Lemon Garlic Shrimp Pasta",
+    "description": "Tangy lemon and garlic-infused shrimp served over pasta.",
+    "ingredients": [
+      "400 g shrimp, peeled and deveined",
+      "300 g spaghetti",
+      "4 cloves garlic, minced",
+      "1 lemon, juiced and zested",
+      "50 g butter",
+      "2 tbsp chopped parsley"
+    ],
+    "preparing_time": 20,
+    "calories": 350,
+    "recipe_image": "https://ibb.co/LSn8crm"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Vegan Chickpea Curry",
+    "description": "A fragrant and hearty curry made with chickpeas, tomatoes, and coconut milk.",
+    "ingredients": [
+      "400 g canned chickpeas, drained and rinsed",
+      "400 ml coconut milk",
+      "200 g tomatoes, diced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp curry powder",
+      "1 tsp ground turmeric"
+    ],
+    "preparing_time": 35,
+    "calories": 300,
+    "recipe_image": "https://ibb.co/4T0BkcR"
+  }
+]
