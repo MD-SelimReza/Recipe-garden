@@ -1,11 +1,14 @@
 import "./App.css";
+import Banner from "./components/Banner/Banner";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold text-red-500 underline">
-        Hello world!
-      </h1>
+      <header className="container lg:px-16">
+        <Navbar></Navbar>
+        <Banner></Banner>
+      </header>
     </>
   );
 }
