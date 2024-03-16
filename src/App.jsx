@@ -3,9 +3,12 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Recipes from "./components/Recipes/Recipes";
+import Setrecipe from "./components/Setrecipe/Setrecipe";
+import RecipeHeading from "./components/RecipeHeading/RecipeHeading";
 
 function App() {
   const [markRecipe, setMarkRecipe] = useState([]);
+  // console.log(markRecipe);
 
   const handleToCook = (recipe) => {
     const newMarkRecipe = [...markRecipe, recipe];
@@ -18,7 +21,11 @@ function App() {
         <Banner></Banner>
       </header>
       <main className="container lg:px-10">
-        <Recipes handleToCook={handleToCook}></Recipes>
+        <RecipeHeading></RecipeHeading>
+        <div className="flex gap-5">
+          <Recipes handleToCook={handleToCook}></Recipes>
+          <Setrecipe markRecipe={markRecipe}></Setrecipe>
+        </div>
       </main>
     </>
   );

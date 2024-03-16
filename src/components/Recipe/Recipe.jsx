@@ -13,22 +13,24 @@ const Recipe = ({ recipe, handleToCook }) => {
   } = recipe;
   return (
     <div className="border p-6 rounded-2xl">
-      <img src={recipe_image} alt="" />
-      <div>
-        <h2>{recipe_name}</h2>
+      <img src={recipe_image} alt="Recipe Image" />
+      <div className="mt-6">
+        <h2 className="text-xl font-semibold text-[#282828]">{recipe_name}</h2>
         <p>{description}</p>
       </div>
-      <hr />
+      <hr className="my-4" />
       <div>
-        <h4>Ingredients: {ingredients.length}</h4>
-        <ul>
-          {ingredients.map((ingredient, idx) => (
-            <li key={idx}>{ingredient}</li>
-          ))}
-        </ul>
+        <h4 className="text-lg font-medium">
+          Ingredients: {ingredients.length}
+        </h4>
+        {ingredients.map((ingredient, idx) => (
+          <ul key={idx} className="list-disc ml-4">
+            <li>{ingredient}</li>
+          </ul>
+        ))}
       </div>
-      <hr />
-      <div className="flex items-center gap-4">
+      <hr className="my-4" />
+      <div className="flex items-center gap-8 mb-4">
         <p className="flex items-center gap-2">
           <GoClock />
           {preparing_time} minutes
