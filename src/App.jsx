@@ -8,12 +8,38 @@ import RecipeHeading from "./components/RecipeHeading/RecipeHeading";
 
 function App() {
   const [markRecipe, setMarkRecipe] = useState([]);
-  // console.log(markRecipe);
+  const [cookingRecipe, setCookingRecipe] = useState([]);
+  console.log(markRecipe);
+  console.log(cookingRecipe);
+
+  const [preparingTime, setPreparingTime] = useState(0);
+  const [calorie, setCalorie] = useState(0);
 
   const handleToCook = (recipe) => {
     const newMarkRecipe = [...markRecipe, recipe];
     setMarkRecipe(newMarkRecipe);
   };
+
+  const handlePreparing = (recipe_id, preparing_time, calories) => {
+    const totalPreparingTime = preparingTime + preparing_time;
+    setPreparingTime(totalPreparingTime);
+
+    const totalCalorie = calorie + calories;
+    setCalorie(totalCalorie);
+
+    const preparingRecipe = markRecipe.filter(
+      (singleRecipe) => singleRecipe.recipe_id !== recipe_id
+    );
+    setMarkRecipe(preparingRecipe);
+
+    const cookedRecipe = markRecipe.filter(
+      (singleRecipe) => singleRecipe.recipe_id === recipe_id
+    );
+    const cookedRecipes = [...cookingRecipe, ...cookedRecipe];
+    setCookingRecipe(cookedRecipes);
+    // console.log(cookedRecipes.length);
+  };
+
   return (
     <>
       <header className="container lg:px-10">
@@ -24,7 +50,13 @@ function App() {
         <RecipeHeading></RecipeHeading>
         <div className="flex gap-5">
           <Recipes handleToCook={handleToCook}></Recipes>
-          <Setrecipe markRecipe={markRecipe}></Setrecipe>
+          <Setrecipe
+            markRecipe={markRecipe}
+            handlePreparing={handlePreparing}
+            cookingRecipe={cookingRecipe}
+            preparingTime={preparingTime}
+            calorie={calorie}
+          ></Setrecipe>
         </div>
       </main>
     </>
