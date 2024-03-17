@@ -3,14 +3,14 @@ import banner from "../../assets/images/banner.jpg";
 const Banner = () => {
   return (
     <div
-      className="hero rounded-2xl overflow-hidden mt-4 py-20"
+      className="hero rounded-2xl overflow-hidden mt-4 py-10 lg:py-20"
       style={{
         backgroundImage: "url(" + banner + ")",
       }}
     >
       <div className="bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="px-20">
+        <div className="lg:px-20 px-5">
           <h1 className="mb-5 text-5xl font-bold">
             Discover an exceptional cooking class tailored for you!
           </h1>
@@ -20,11 +20,11 @@ const Banner = () => {
             seasoned chef or a kitchen novice, our user-friendly platform offers
             a diverse collection of recipes to suit every taste and occasion.
           </p>
-          <div className="space-x-4">
+          <div className="flex lg:flex-row flex-col justify-center items-center gap-4">
             <button className="btn bg-[#0BE58A] text-[#150B2B] border-none outline-none rounded-full px-6 text-xl font-semibold">
               Explore Now
             </button>
-            <button className="btn bg-transparent text-white rounded-full px-6 text-xl font-semibold">
+            <button className="btn bg-transparent text-white rounded-full lg:px-6 text-xl font-semibold">
               Our Feedback
             </button>
           </div>

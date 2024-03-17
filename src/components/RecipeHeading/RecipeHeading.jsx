@@ -1,6 +1,6 @@
 const RecipeHeading = () => {
   return (
-    <div className="px-40 text-center mt-20 space-y-3">
+    <div className="lg:px-40 px-5 text-center mt-20 space-y-3">
       <h2 className="text-3xl font-semibold text-[#150B2B]">Our Recipes</h2>
       <p>
         <q>
