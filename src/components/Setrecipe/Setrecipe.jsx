@@ -9,34 +9,61 @@ const SetRecipe = ({
   calorie,
 }) => {
   return (
-    <div className="border h-fit p-6 rounded-2xl mt-4 w-[30%]">
+    <div className="border h-fit p-4 rounded-2xl mt-5 w-[30%] shadow">
       <div className="mb-6">
         <h2 className="text-center text-[#282828] text-2xl font-semibold">
           Want to cook: {markRecipe.length}
         </h2>
         <hr className="my-2" />
-        {markRecipe.map((recipeItem, idx) => (
-          <MarkRecipe
-            key={idx}
-            recipeItem={recipeItem}
-            idx={idx}
-            handlePreparing={handlePreparing}
-          ></MarkRecipe>
-        ))}
+        <div className="overflow-x-auto">
+          <table>
+            <thead>
+              <tr>
+                <th className="p-2">&nbsp;</th>
+                <th className="p-2">Name</th>
+                <th className="p-2">Time</th>
+                <th className="p-2">Calories</th>
+                <th className="p-2">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              {markRecipe.map((recipeItem, idx) => (
+                <MarkRecipe
+                  key={idx}
+                  recipeItem={recipeItem}
+                  idx={idx}
+                  handlePreparing={handlePreparing}
+                ></MarkRecipe>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
       <div>
         <h2 className="text-center text-[#282828] text-2xl font-semibold">
           Currently cooking: {cookingRecipe.length}
         </h2>
         <hr className="my-2" />
-        {cookingRecipe.map((recipeItem, idx) => (
-          <CookedRecipe
-            key={idx}
-            recipeItem={recipeItem}
-            idx={idx}
-          ></CookedRecipe>
-        ))}
-        <div className="font-medium flex justify-between items-center mt-4">
+        <table>
+          <thead>
+            <tr>
+              <th className="p-2">&nbsp;</th>
+              <th className="p-2">Name</th>
+              <th className="p-2">Time</th>
+              <th className="p-2">Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cookingRecipe.map((recipeItem, idx) => (
+              <CookedRecipe
+                key={idx}
+                recipeItem={recipeItem}
+                idx={idx}
+              ></CookedRecipe>
+            ))}
+          </tbody>
+        </table>
+        <div className="font-medium gap-6 flex justify-between items-center mt-4">
           <p>Total Time = {preparingTime} minutes</p>
           <p>Total Calories = {calorie} calories</p>
         </div>

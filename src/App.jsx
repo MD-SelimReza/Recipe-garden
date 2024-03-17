@@ -3,10 +3,10 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Recipes from "./components/Recipes/Recipes";
-import SetRecipe from "./components/SetRecipe/SetRecipe";
 import RecipeHeading from "./components/RecipeHeading/RecipeHeading";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SetRecipe from "./components/SetRecipe/SetRecipe";
 
 function App() {
   const [markRecipe, setMarkRecipe] = useState([]);
