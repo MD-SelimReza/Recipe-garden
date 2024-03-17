@@ -21,7 +21,7 @@ const Banner = () => {
             well world-class Programmer.
           </p>
           <div className="space-x-4">
-            <button className="btn bg-[#0BE58A] text-[#150B2B] rounded-full px-6 text-xl font-semibold">
+            <button className="btn bg-[#0BE58A] text-[#150B2B] border-none outline-none rounded-full px-6 text-xl font-semibold">
               Explore Now
             </button>
             <button className="btn bg-transparent text-white rounded-full px-6 text-xl font-semibold">

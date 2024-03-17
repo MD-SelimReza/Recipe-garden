@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-const MarkRecipe = ({ recipeItem, idx, handlePreparing }) => {
-  const { recipe_id, recipe_name, preparing_time, calories } = recipeItem;
+const CookedRecipe = ({ recipeItem, idx }) => {
+  const { recipe_name, preparing_time, calories } = recipeItem;
   return (
     <div>
       <table>
@@ -21,22 +21,13 @@ const MarkRecipe = ({ recipeItem, idx, handlePreparing }) => {
           </tr>
         </tbody>
       </table>
-      <div className="w-full text-center">
-        <button
-          className="btn bg-[#0BE58A] font-medium text-lg text-[#150B2B] rounded-full px-6 mt-4"
-          onClick={() => handlePreparing(recipe_id, preparing_time, calories)}
-        >
-          Preparing
-        </button>
-      </div>
     </div>
   );
 };
 
-MarkRecipe.propTypes = {
+CookedRecipe.propTypes = {
   recipeItem: PropTypes.object.isRequired,
   idx: PropTypes.number,
-  handlePreparing: PropTypes.func,
 };
 
-export default MarkRecipe;
+export default CookedRecipe;
