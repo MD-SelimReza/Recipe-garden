@@ -13,7 +13,13 @@ const Recipe = ({ recipe, handleToCook }) => {
   } = recipe;
   return (
     <div className="border p-6 rounded-2xl">
-      <img src={recipe_image} alt="Recipe Image" />
+      <div className="h-[150px]">
+        <img
+          src={recipe_image}
+          alt="Recipe Image"
+          className="size-full rounded-xl"
+        />
+      </div>
       <div className="mt-6">
         <h2 className="text-xl font-semibold text-[#282828]">{recipe_name}</h2>
         <p>{description}</p>

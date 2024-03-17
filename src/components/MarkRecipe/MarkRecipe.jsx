@@ -6,10 +6,10 @@ const MarkRecipe = ({ recipeItem, idx, handlePreparing }) => {
       <table>
         <thead>
           <tr>
-            <th>&nbsp;</th>
-            <th>Name</th>
-            <th>Time</th>
-            <th>Calories</th>
+            <th className="pb-2">&nbsp;</th>
+            <th className="pb-2">Name</th>
+            <th className="pb-2">Time</th>
+            <th className="pb-2">Calories</th>
           </tr>
         </thead>
         <tbody>

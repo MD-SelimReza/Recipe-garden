@@ -11,7 +11,7 @@
     ],
     "preparing_time": 30,
     "calories": 320,
-    "recipe_image": "https://ibb.co/pKMFMRv"
+    "recipe_image": "https://i.ibb.co/5Mg3gh5/img-1.jpg"
   },
   {
     "recipe_id": 2,
@@ -26,7 +26,7 @@
     ],
     "preparing_time": 25,
     "calories": 280,
-    "recipe_image": "https://ibb.co/wBYkr5w"
+    "recipe_image": "https://i.ibb.co/cw19zQz/img-2.jpg"
   },
   {
     "recipe_id": 3,
@@ -42,7 +42,7 @@
     ],
     "preparing_time": 40,
     "calories": 380,
-    "recipe_image": "https://ibb.co/Bj55Jq2"
+    "recipe_image": "https://i.ibb.co/VYRzH9j/img-3.jpg"
   },
   {
     "recipe_id": 4,
@@ -57,7 +57,7 @@
     ],
     "preparing_time": 15,
     "calories": 250,
-    "recipe_image": "https://ibb.co/qgJ6Q1w"
+    "recipe_image": "https://i.ibb.co/ZmsPWsG/img-4.jpg"
   },
   {
     "recipe_id": 5,
@@ -73,7 +73,7 @@
     ],
     "preparing_time": 20,
     "calories": 350,
-    "recipe_image": "https://ibb.co/LSn8crm"
+    "recipe_image": "https://i.ibb.co/pvVRfdD/img-5.jpg"
   },
   {
     "recipe_id": 6,
@@ -90,6 +90,6 @@
     ],
     "preparing_time": 35,
     "calories": 300,
-    "recipe_image": "https://ibb.co/4T0BkcR"
+    "recipe_image": "https://i.ibb.co/KxwZJGc/img-6.jpg"
   }
 ]
