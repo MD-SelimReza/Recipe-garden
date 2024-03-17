@@ -54,7 +54,7 @@ function App() {
         <Navbar></Navbar>
         <Banner></Banner>
       </header>
-      <main className="container lg:px-10 mb-10">
+      <main className="container lg:px-10 mb-20">
         <RecipeHeading></RecipeHeading>
         <div className="flex gap-5">
           <Recipes handleToCook={handleToCook}></Recipes>

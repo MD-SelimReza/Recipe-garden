@@ -26,7 +26,7 @@ const SetRecipe = ({
       </div>
       <div>
         <h2 className="text-center text-[#282828] text-2xl font-semibold">
-          Currently cooking:{cookingRecipe.length}
+          Currently cooking: {cookingRecipe.length}
         </h2>
         <hr className="my-2" />
         {cookingRecipe.map((recipeItem, idx) => (
